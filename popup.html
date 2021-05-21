@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="heading">
+            <h1>Recorder</h1>
+        </div>
+        <div id='tabs'>
+            <div id='tab-only' class='type type-active'><img src='assets/tab-only-active.svg'><p>Tab</p></div>
+            <div id='desktop' class='type'><img src='assets/desktop.svg'><p>Desktop</p></div>
+            <div id='camera-only' class='type'><img src='assets/camera-only.svg'><p>Camera</p></div>
+        </div>
+        <div class="toogleButtons" id="microphone">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <select>
+                <option disabled selected>Select Microphone</option>
+            </select>
+            <img src="assets/microphone.png">
+        </div>
+        <div class="toogleButtons" id="webcam">
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <select>
+                <option disabled selected>Select Webcam</option>
+            </select>
+            <img src="assets/laptop-webcam.png">
+        </div>
+        <div id="recording">
+            <button id="RecordingButton" >Start Recording</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
